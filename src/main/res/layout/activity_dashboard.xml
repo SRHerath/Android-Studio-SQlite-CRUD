@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Dashboard"
+        android:background="@drawable/background_sub">
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool_main"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/r" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="fantasy"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Welcome!"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnget"
+                android:layout_width="221dp"
+                android:layout_height="139dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_view"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                android:text="View Item"
+                android:textColor="#ffffff"
+
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="221dp"
+                android:layout_height="139dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_view"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                android:text="New Item"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
